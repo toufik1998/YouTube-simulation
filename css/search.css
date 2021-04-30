@@ -1,0 +1,39 @@
+#search-filters-icon{
+    cursor: pointer;
+}
+.search-header .filter-column{
+    /* اخفاء الاعمدة */
+    display: none;
+}
+/* تنسيق الصندوق الدي قام المستخدم بالضغط عليه */
+input:checked+span{
+    color: #bf40bf;
+}
+time{
+    bottom: 7px;
+    left: 29px;
+}
+.card .card-horizontal .card-body p{
+    /* هاته الخاصية تنقص عدد الاسطر المكتوبة الى سطر واحد */
+    white-space: nowrap;
+    /* اخفاء الاسطر التي بعد السطر الاول */
+    overflow: hidden;
+    /* خاصية تضع ثلات نقاط امام السطر الاول */
+    text-overflow: ellipsis;
+}
+/* لكي تنجح وتتفعل لدينا الخصائص السابقة وجب العنصر الابن للبطاقة ثم اعطائه الخاصية التالية */
+.card-body{
+    min-width: 0;
+}
+@media(max-width: 767px){
+    .card .card-icons img{
+        width: 100%;
+    }
+}
+.card .card-horizontal time{
+    left: 10px;
+}
+.card .card-horizontal .fa-play{
+    left: 48px;
+}
+
